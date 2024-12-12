@@ -62,6 +62,23 @@ int main() {
     try {
         InMemoryDB db;
 
+// Starts a transaction and performs operations
+        try {
+            db.begin_transaction();
+            db.put("A", 5);
+            db.put("B", 10);
+            db.commit();
+
+            cout << db.get("A") << endl; // Outputs: 5
+            cout << db.get("B") << endl; // Outputs: 10
+        }
+        catch (const std::exception& e) {
+            cerr << "Error: " << e.what() << endl;
+        }
+
+
+
+
         try {
             db.get("A");                    // should return null, because A doesn’t exist in the DB yet
         }
