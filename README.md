@@ -11,6 +11,7 @@
 
 # Setup:
   To compile: in terminal run "g++ -std=c++17 -o InMemoryDB main.cpp"
+  
   To run: in terminal run "./InMemoryDB"
 
 # Improvements to assignment
