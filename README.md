@@ -1,15 +1,15 @@
 # Data-Processing-and-Storage
  in memory key-value database with transaction support, which includes   the following functions:
-    begin_transaction()
-    put(key, value)
-    get(key)
-    commit()
+    begin_transaction(),
+    put(key, value),
+    get(key),
+    commit(),
     rollback()
 
-# Requirements:
+# Requirements
   C++17 or later
 
-# Setup:
+# Setup
   To compile: in terminal run "g++ -std=c++17 -o InMemoryDB main.cpp"
   
   To run: in terminal run "./InMemoryDB"
